@@ -1,0 +1,2 @@
+# FamilyMap
+Fully functional Android app that includes Amazon Maps, and server communication. This project was originally for a class, and we were given minimal specs - an API and things to pass off. The rest was up to us. I chose to implement Google's Material Design for a clean and consistent look across the app. The backend server is hosted on my computer - text me at 385-290-7346 or email me at xander.moffatt@gmail.com, and I'll spin it up so you can log in.
