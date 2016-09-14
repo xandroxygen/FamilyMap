@@ -1,0 +1,76 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:windowSoftInputMode='stateHidden'
+    android:background="@color/info_card_background"
+    xmlns:map="http://schemas.android.com/apk/res-auto"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    tools:context=".map.MapFragment">
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="@dimen/marginSmall"
+        android:layout_marginRight="@dimen/marginSmall"
+        android:layout_marginTop="@dimen/marginSmall"
+        android:layout_marginBottom="168dp"
+        android:elevation="2dp"
+        card_view:cardCornerRadius="6dp">
+        <fragment
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/actual_map"
+            android:name="com.amazon.geo.mapsv2.SupportMapFragment" />
+    </android.support.v7.widget.CardView>
+
+    <android.support.v7.widget.CardView
+        xmlns:card_view="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/info_card"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_gravity="bottom|center_horizontal"
+        android:layout_marginLeft="@dimen/marginSmall"
+        android:layout_marginRight="@dimen/marginSmall"
+        android:layout_marginBottom="@dimen/marginSmall"
+        android:elevation="2dp"
+        android:foreground="?android:attr/selectableItemBackground"
+        android:clickable="true"
+        card_view:cardCornerRadius="6dp"
+        card_view:cardBackgroundColor="@color/cardview_light_background">
+
+        <IconTextView
+            android:id="@+id/card_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/info_card_icon"
+            android:textSize="96sp"
+            android:shadowColor="#22000000"
+            android:shadowDx="3"
+            android:shadowDy="3"
+            android:shadowRadius="1"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="30dp"/>
+
+        <TextView
+            android:id="@+id/card_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/info_card_title"
+            android:textSize="32sp"
+            android:layout_marginLeft="140dp"
+            android:layout_marginTop="40dp"
+            />
+
+        <TextView
+            android:id="@+id/card_event"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/info_card_sub"
+            android:textSize="24sp"
+            android:layout_marginLeft="140dp"
+            android:layout_marginTop="80dp"
+            />
+    </android.support.v7.widget.CardView>
+
+</FrameLayout>

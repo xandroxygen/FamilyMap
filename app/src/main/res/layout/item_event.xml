@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal" android:layout_width="match_parent"
+    android:layout_height="80dp">
+
+    <IconTextView
+        android:id="@+id/event_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="35dp"
+        android:layout_marginTop="15dp"
+        android:textSize="54sp"
+        android:shadowColor="#22000000"
+        android:shadowDx="3"
+        android:shadowDy="3"
+        android:shadowRadius="1"
+        android:text="@string/icon_event"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/event_icon"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="35dp"
+        android:textSize="20sp"
+        android:text="text"
+        android:id="@+id/event_title"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="45dp"
+        android:layout_marginLeft="40dp"
+        android:layout_toRightOf="@id/event_icon"
+        android:textSize="20sp"
+        android:text="test"
+        android:id="@+id/event_name"/>
+
+</RelativeLayout>

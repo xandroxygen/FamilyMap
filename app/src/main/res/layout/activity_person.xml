@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/info_card_background">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:orientation="vertical" android:layout_width="match_parent"
+        android:layout_centerHorizontal="true"
+        android:background="@color/info_card_background"
+        xmlns:map="http://schemas.android.com/apk/res-auto"
+        xmlns:card_view="http://schemas.android.com/apk/res-auto"
+        android:layout_height="match_parent">
+
+        <android.support.v7.widget.CardView android:id="@+id/p_desc"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:elevation="2dp"
+            android:layout_margin="8dp"
+            card_view:cardCornerRadius="6dp"
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:card_view="http://schemas.android.com/apk/res-auto">
+
+            <IconTextView
+                android:id="@+id/p_desc_icon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/info_card_icon"
+                android:textSize="64sp"
+                android:shadowColor="#22000000"
+                android:shadowDx="3"
+                android:shadowDy="3"
+                android:shadowRadius="1"
+                android:layout_marginTop="15dp"
+                android:layout_marginLeft="30dp"/>
+
+            <TextView
+                android:id="@+id/p_desc_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/info_card_title"
+                android:textSize="32sp"
+                android:layout_marginLeft="100dp"
+                android:layout_marginTop="15dp"
+                />
+
+            <TextView
+                android:id="@+id/p_desc_gender"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/info_card_sub"
+                android:textSize="24sp"
+                android:layout_marginLeft="100dp"
+                android:layout_marginTop="50dp"
+                />
+
+
+
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            xmlns:card_view="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/p_event_card"
+            android:layout_margin="8dp"
+            android:elevation="2dp"
+            card_view:cardCornerRadius="6dp">
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/event_recycler"
+                android:scrollbars="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+            </android.support.v7.widget.RecyclerView>
+
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            xmlns:card_view="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/p_person_card"
+            android:layout_margin="8dp"
+            android:elevation="2dp"
+            card_view:cardCornerRadius="6dp">
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/person_recycler"
+                android:scrollbars="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+            </android.support.v7.widget.RecyclerView>
+
+        </android.support.v7.widget.CardView>
+
+
+    </LinearLayout>
+
+</ScrollView>

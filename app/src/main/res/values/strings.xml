@@ -1,0 +1,39 @@
+<resources>
+    <string name="app_name">FamilyMap</string>
+
+    <string name="login_text">Login</string>
+    <string name="username">Username</string>
+    <string name="password">Password</string>
+    <string name="host">Server Host</string>
+    <string name="port">Server Port</string>
+
+    <string name="info_card_icon">{fa-android}</string>
+    <string name="info_card_icon_male">{fa-male}</string>
+    <string name="info_card_icon_female">{fa-female}</string>
+    <string name="info_card_title">Choose an event</string>
+    <string name="info_card_sub">to see information about it</string>
+
+    <string name="settings_option">Settings</string>
+    <string name="search_options">Search</string>
+    <string name="filter_options">Filter</string>
+
+    <string name="male">Male</string>
+    <string name="female">Female</string>
+    <string name="icon_event">{fa-map-marker}</string>
+    <string name="icon_chevron_down">{fa-chevron-down}</string>
+    <string name="icon_chevron_right">{fa-chevron-right}</string>
+
+    <string name="icon_search">{fa-search}</string>
+    <string name="search">Search</string>
+
+    <string name="line_settings">Line Settings </string>
+    <string name="life_line_title">Life Story Lines</string>
+    <string name="spouse_line_title">Spouse Lines</string>
+    <string name="family_line_title">Family Tree Lines</string>
+    <string name="map_type">Map Type</string>
+    <string name="map_type_summary">Background display on map</string>
+    <string name="resync_title">Re-sync Data</string>
+    <string name="resync_summary">Using FamilyMap Service</string>
+    <string name="logout_title">Log out</string>
+    <string name="logout_summary">Returns to Login Screen</string>
+</resources>

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <group
+        android:id="@+id/option_icon_group">
+        <item
+            android:id="@+id/search_icon"
+            android:title="@string/search_options"
+            android:visible="false"
+            app:showAsAction="ifRoom"/>
+
+        <item
+            android:id="@+id/filter_icon"
+            android:title="@string/filter_options"
+            android:visible="false"
+            app:showAsAction="ifRoom"/>
+
+        <item
+            android:id="@+id/settings_icon"
+            android:title="@string/settings_option"
+            android:visible="false"
+            app:showAsAction="ifRoom"/>
+
+    </group>
+</menu>
